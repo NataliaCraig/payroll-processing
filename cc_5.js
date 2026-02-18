@@ -21,3 +21,11 @@ const employees = [
     hoursWorked: 40
   }
 ];
+//return pay for 40 hr
+function calculateBasePay(rate, hours) {
+  if (hours <= 40) {
+    return rate * hours;
+  } else {
+    return rate * 40;
+  }
+}
